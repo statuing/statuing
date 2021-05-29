@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Statue</string>
+    <string name="off">OFF</string>
+    <string name="atthirtyminutes">Every 30 Minutes</string>
+    <string name="onehour">1 Hour</string>
+    <string name="twohours">2 Hours</string>
+    <string name="threehours">3 Hours</string>
+    <string name="sixhours">6 Hours</string>
+    <string name="twelvehours">12 Hours</string>
+    <string name="eighteenhours">18 Hours</string>
+    <string name="aday">A Day</string>
+    <string name="halfminute">30 seconds</string>
+    <string name="oneminute">1 Minute</string>
+    <string name="twominutes">2 Minutes</string>
+    <string name="title">Statue Meditation</string>
+    <string name="statuingfreq">Statuing Freq</string>
+    <string name="statuingoverdelay">Statue-Over Time</string>
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ToggleButton
+        android:id="@+id/toggle"
+        android:layout_width="213dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="172dp"
+        android:text="@string/off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/statuefreq"
+        android:checkedButton="@+id/thirtyminutes"
+        android:layout_width="216dp"
+        android:layout_height="301dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/statueoverdelay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/thirtyminutes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:onClick="onStatueFreqChanged"
+            android:text="@string/atthirtyminutes" />
+
+        <RadioButton
+            android:id="@+id/onehour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onStatueFreqChanged"
+            android:text="@string/onehour" />
+
+        <RadioButton
+            android:id="@+id/twohours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onStatueFreqChanged"
+            android:text="@string/twohours" />
+
+        <RadioButton
+            android:id="@+id/threehours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onStatueFreqChanged"
+            android:text="@string/threehours" />
+
+        <RadioButton
+            android:id="@+id/sixhours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onStatueFreqChanged"
+            android:text="@string/sixhours" />
+
+        <RadioButton
+            android:id="@+id/twelvehours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onStatueFreqChanged"
+            android:text="@string/twelvehours" />
+
+        <RadioButton
+            android:id="@+id/eighteenhours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onStatueFreqChanged"
+            android:text="@string/eighteenhours" />
+
+        <RadioButton
+            android:id="@+id/aday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onStatueFreqChanged"
+            android:text="@string/aday" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/statueoverdelay"
+        android:checkedButton="@+id/halfminute"
+        android:layout_width="129dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="276dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/statuefreq"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <RadioButton
+            android:id="@+id/halfminute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onStatueOverTimeChanged"
+            android:text="@string/halfminute" />
+
+        <RadioButton
+            android:id="@+id/oneminute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onStatueOverTimeChanged"
+            android:text="@string/oneminute" />
+
+        <RadioButton
+            android:id="@+id/twominutes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onStatueOverTimeChanged"
+            android:text="@string/twominutes" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="179dp"
+        android:text="@string/title"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="174dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="282dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/statuingfreq"
+        app:layout_constraintBottom_toTopOf="@+id/statuefreq"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="113dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/statuingoverdelay"
+        app:layout_constraintBottom_toTopOf="@+id/statuefreq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
